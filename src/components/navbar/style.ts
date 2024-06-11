@@ -33,7 +33,7 @@ export const textSectionStyles: StackProps = {
 export const mobileNavContainerStyles: FlexProps = {
   justify: "space-between",
   align: "center",
-  px: "2rem",
+  px: "0.5rem",
   py: "0.5rem",
   borderBottom: "1px",
   borderColor: "red",

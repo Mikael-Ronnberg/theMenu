@@ -8,9 +8,9 @@ export default function MobileMenyBtn() {
           <path
             d="M0.5 0.5H10.379M0.5 3.11839H10.379M0.5 5.78938H10.379"
             stroke="black"
-            stroke-miterlimit="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </Icon>

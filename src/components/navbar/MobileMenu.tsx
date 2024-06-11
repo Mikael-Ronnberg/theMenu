@@ -1,5 +1,6 @@
 "use client";
 
+import { navItems } from "@/helpers/helpers";
 import MobileMenyBtn from "@/icons/MobileMenyBtn";
 import {
   Button,
@@ -12,6 +13,7 @@ import {
   DrawerFooter,
   Box,
   useDisclosure,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
 //   import { navItems } from "../helpers";
@@ -31,7 +33,6 @@ export default function MobileMenu() {
         }}
         color="brand.whiteGrey"
         fontSize="1rem"
-        pt="1rem"
       >
         <MobileMenyBtn />
       </Button>
@@ -46,22 +47,22 @@ export default function MobileMenu() {
           <DrawerCloseButton rounded="sm" />
           <DrawerHeader p="2rem"></DrawerHeader>
 
-          <DrawerBody bgColor="brand.whiteCream">
+          <DrawerBody bgColor="brand.whiteGrey">
             <Box mb="2rem"></Box>
-            {/* {navItems.map((navItem, i) => (
-                <Link to={navItem.href} key={i}>
-                  <Box
-                    color="brand.primaryDarker"
-                    p="0.5rem"
-                    _hover={{
-                      bgColor: "brand.primary",
-                      color: "brand.whiteCream",
-                    }}
-                  >
-                    {navItem.label}
-                  </Box>
-                </Link>
-              ))} */}
+            {navItems.map((navItem, i) => (
+              <Link href={navItem.href} key={i}>
+                <Box
+                  color="brand.darkText"
+                  p="0.5rem"
+                  _hover={{
+                    bgColor: "brand.primary",
+                    color: "brand.primaryWhite",
+                  }}
+                >
+                  {navItem.label}
+                </Box>
+              </Link>
+            ))}
           </DrawerBody>
 
           <DrawerFooter>
