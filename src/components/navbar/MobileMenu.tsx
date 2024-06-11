@@ -1,5 +1,4 @@
 "use client";
-
 import { navItems } from "@/helpers/helpers";
 import MobileMenyBtn from "@/icons/MobileMenyBtn";
 import {
@@ -16,7 +15,6 @@ import {
   Link,
 } from "@chakra-ui/react";
 import React from "react";
-//   import { navItems } from "../helpers";
 
 export default function MobileMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
