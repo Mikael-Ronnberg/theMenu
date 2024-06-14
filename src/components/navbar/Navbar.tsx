@@ -1,17 +1,17 @@
-import { Box, Flex, Stack } from "@chakra-ui/react";
-import { mobileNavContainerStyles } from "./style";
-import MobileMenu from "./MobileMenu";
+import { Box } from "@chakra-ui/react";
+import { navbarStyles } from "./style";
+import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
   return (
     <>
-      <Flex {...mobileNavContainerStyles}>
-        <Box>
-          <MobileMenu />
+      <Box h="auto">
+        <Box {...navbarStyles}>
+          <DesktopNavbar />
+          <MobileNavbar />
         </Box>
-
-        <Stack direction="row" spacing={1}></Stack>
-      </Flex>
+      </Box>
     </>
   );
 }

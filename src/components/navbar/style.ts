@@ -1,33 +1,41 @@
-import { BoxProps, FlexProps, StackProps } from "@chakra-ui/react";
+import { BoxProps, FlexProps, LinkProps, StackProps } from "@chakra-ui/react";
 
 export const navbarStyles: BoxProps = {
   pos: "fixed",
   w: "100%",
-  bgColor: "green",
-  color: "black",
+  bgColor: "brand.primaryDark",
+  color: "brand.primaryLight",
   mb: "1rem",
   zIndex: 10,
 };
 
 export const desktopNavStyles: FlexProps = {
+  //   width: "100%",
   justify: "space-between",
   align: "center",
   px: "2rem",
   py: "0.5rem",
   borderBottomWidth: "1px",
-  borderColor: "brand.whiteCream",
+  borderColor: "brand.whiteBlue",
   display: { base: "none", lg: "flex" },
 };
 
 export const textSectionStyles: StackProps = {
+  width: "100%",
   direction: "row",
   alignItems: "center",
   justifyContent: "space-around",
-  borderTop: "1px",
   borderColor: "brand.lightText",
   marginLeft: "2rem",
   marginRight: "2rem",
   display: { base: "none", lg: "flex" },
+};
+
+export const navbarLinkStyles: LinkProps = {
+  _hover: {
+    color: "brand.primaryDark",
+    cursor: "pointer",
+  },
 };
 
 export const mobileNavContainerStyles: FlexProps = {
