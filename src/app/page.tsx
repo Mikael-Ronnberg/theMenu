@@ -1,9 +1,10 @@
 import { Center, Flex, Text } from "@chakra-ui/react";
+import { outerWrapper } from "./pages/style";
 
 export default function Home() {
   return (
     <>
-      <Flex w="100vw" h="100vh" justify="center" align="center">
+      <Flex {...outerWrapper}>
         <Center>
           <Text>The Menu</Text>
         </Center>
