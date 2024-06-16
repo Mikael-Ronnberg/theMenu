@@ -26,7 +26,7 @@ export default function Login({}: LoginProps) {
     }));
   };
 
-  return (
+  const {} = trpc.return(
     <>
       <Flex {...outerWrapper}>
         <FormControl>
